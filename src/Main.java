@@ -11,20 +11,20 @@ public class Main {
         }
         System.out.println();
         System.out.println("Задача-2");
-        int Year = 2015;
+        int Year = 2024;
         int clientOS2 = 1;
         int clientDeviceYear = 2024;
         if (clientOS2 == 1 && clientDeviceYear < Year) {
-            System.out.println("Установите облегченую версию приложения для IOS по ссылке");
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         } else if (clientOS2 == 1 && clientDeviceYear >= Year) {
-            System.out.println("Установите  версию приложения для IOS по ссылке");
+            System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientOS2 == 0 && clientDeviceYear < Year) {
-            System.out.println("Установите  версию приложения для iOS по ссылке");
-        } else if (clientDeviceYear <= 2015 && clientOS == 0) {
-            System.out.println("Установите облегченную версию приложения для Android  по ссылке");
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else if (clientOS2 == 0 && clientDeviceYear >= Year) {
-            System.out.println("Установите  версию приложения для Android по ссылке");
+            System.out.println("Установите версию приложения для Android по ссылке");
         }
+
+
         System.out.println();
         System.out.println("Задача-3");
         int year = 2024;
@@ -35,60 +35,64 @@ public class Main {
         }
         System.out.println();
         System.out.println("Задача-4");
+
         int distanceDelivery = 95;
-        int day = 1;
+        int deliveryDay = 1;
+
         if (distanceDelivery <= 20) {
-            System.out.println("Потребуется дня " + day);
-        } else if (distanceDelivery >= 20 && distanceDelivery < 60) {
-            System.out.println("Потребуется дней " + (day + 1));
-        } else if (distanceDelivery >= 60 && distanceDelivery <= 100) {
-            System.out.println("Потребуется дня " + (day + 2));
+            System.out.println("Потребуется дней : " + deliveryDay);
+        } else if (distanceDelivery <= 60) {
+            deliveryDay++;
+            System.out.println("Потребуется дней : " + deliveryDay);
+        } else if (distanceDelivery <= 100) {
+            deliveryDay += 2;
+            System.out.println("Потребуется дней: " + deliveryDay);
         } else {
-            System.out.println("Доставки нет");
+            System.out.println(" К сожалению доставки нет");
         }
         System.out.println();
         System.out.println("Задача-5");
         int monthNumber = 1;
         switch (monthNumber) {
             case 1:
-                System.out.println(" Зима ");
+                System.out.println("  Пришла зима ");
                 break;
             case 2:
-                System.out.println(" Зима ");
+                System.out.println(" Пришла зима ");
                 break;
             case 3:
-                System.out.println(" Весна  ");
+                System.out.println("Пришла Весна  ");
                 break;
             case 4:
-                System.out.println(" Весна пришла");
+                System.out.println("Пришла Весна ");
                 break;
             case 5:
-                System.out.println(" Весна зелена ");
+                System.out.println(" Пришла Весна ");
                 break;
             case 6:
-                System.out.println(" Лето  ");
+                System.out.println("  Пришло лето  ");
                 break;
             case 7:
-                System.out.println(" Лето пришло ");
+                System.out.println(" Пришло лето  ");
                 break;
             case 8:
-                System.out.println(" Лето жаркое ");
+                System.out.println(" Пришло лето  ");
                 break;
             case 9:
-                System.out.println(" Золотая осень ");
+                System.out.println(" Пришла осень ");
                 break;
             case 10:
-                System.out.println(" Осень ");
+                System.out.println("  Пришла осень ");
                 break;
             case 11:
-                System.out.println(" Зима пришла ");
+                System.out.println(" Пришла осень ");
                 break;
             case 12:
-                System.out.println(" Зима ");
+                System.out.println(" Пришла зима ");
                 break;
             default:
                 System.out.println(" Такого месяца не существует ");
-                break;
+                break;// over
         }
 
     }
